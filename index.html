@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Figuras Planas</title>
+  <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Área y Perímetro</h1>
+    <form id="form">
+      <label for="figura">Selecciona una figura:</label>
+      <select id="figura" name="figura" onchange="mostrarCampos()">
+        <option value="" disabled selected>--Seleccionar--</option>
+        <option value="triangulo">Triángulo</option>
+        <option value="cuadrado">Cuadrado</option>
+        <option value="rectangulo">Rectángulo</option>
+        <option value="circulo">Círculo</option>
+        <option value="trapecio">Trapecio</option>
+      </select>
+
+      <div id="campos"></div>
+
+      <button type="button" onclick="calcular()">Calcular</button>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
